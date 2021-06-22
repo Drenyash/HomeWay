@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block nav %}
+	<li class="nav__item"><a href="{% url 'about' %}" class="nav__link">О компании</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link">Новостройки</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link">Вторичка</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link">Коммерция</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link">Услуги</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link">Застройщикам</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link">ЖК HomeWay</a></li>
+{% endblock %}
+
+{% block content %}
+	<section class="not-found">
+		<h1>404</h1>
+		<p>К сожалению запрашиваемая страница не найдена!</p>
+		<a href="{% url 'home' %}">На главную</a>
+	</section>
+{% endblock %}

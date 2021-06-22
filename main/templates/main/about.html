@@ -1,0 +1,219 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block nav %}
+	<li class="nav__item">
+		<a href="{% url 'about' %}" class="nav__link nav__link--toggle nav__link--1">О компании</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Новости</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Офисы</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Консультанты</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Работа в компании</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Компании</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Руководство</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item">
+		<a href="{% url 'not_found' %}" class="nav__link nav__link--2">Новостройки</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Все новостройки</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Элитные новостройки</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Ипотека online</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Подобрать новостройку</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Новостройки на карте</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--3">Вторичка</a></li>
+	<li class="nav__item">
+		<a href="{% url 'not_found' %}" class="nav__link nav__link--4">Коммерция</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Продажа помещений</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Помещения в новостройках</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item">
+		<a href="{% url 'not_found' %}" class="nav__link nav__link--5">Услуги</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Продать</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Купить</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Оценить</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Обменять</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Срочный выкуп</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--6">Застройщикам</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--7">ЖК HomeWay</a></li>
+{% endblock %}
+
+{% block intro %}
+	<p class="page__section">О компании</p>
+	<h1 class="intro__title intro__title--light">
+		Агенство<br>
+		Недвижимости<br>
+		«ХоумВей»<br>
+	</h1>
+{% endblock %}
+
+{% block content %}
+	<section class="about">
+		<div class="about__wrapper">
+			<h2 class="about__title page__title">Агенство Недвижимости «ХоумВей»</h2>
+			<p class="about__description">Динамично развивающееся агентство, работающее на рынке недвижимости в крупнейших городах России.</p>
+			<div class="about-features">
+				<div class="about-features__item">
+					<h3 class="about-features__title">Весь спектр услуг</h3>
+					<p class="about-features__text">
+						Полный спектр риелторских услуг позволяет компании успешно решать любые задачи на рынке недвижимости.
+						Агентство специализируется на продаже, покупке на первичном и вторичном рынках жилья, коммерческой недвижимости, а также предоставляет услуги в сфере консалтинга и аналитики.
+					</p>
+				</div>
+				<div class="about-features__item">
+					<h3 class="about-features__title">Профессиональный подход</h3>
+					<p class="about-features__text">
+						Высококвалифицированные специалисты агентства осуществляют помощь в получении ипотеки, юридическое сопровождение сделок, покупку жилья при помощи субсидий.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-features">
+		<div class="about__wrapper about__wrapper--lightdark">
+			<h2 class="about__title page__title">Агенство Недвижимости<br>«ХоумВей» оказывает услуги:</h2>
+			<ul class="main-features__list">
+				<li class="main-features__item">
+					<img src="{% static 'main/img/house.svg' %}" alt="" class="main-features__image">
+					<p class="main-features__text">покупка и продажа жилья на первичном рынке</p>
+				</li>
+				<li class="main-features__item">
+					<img src="{% static 'main/img/hotel.svg' %}" alt="" class="main-features__image">
+					<p class="main-features__text">покупка, продажа, обмен жилья на вторичном рынке</p>
+				</li>
+				<li class="main-features__item">
+					<img src="{% static 'main/img/money.svg' %}" alt="" class="main-features__image">
+					<p class="main-features__text">ипотечное кредитование</p>
+				</li>
+				<li class="main-features__item">
+					<img src="{% static 'main/img/market.svg' %}" alt="" class="main-features__image">
+					<p class="main-features__text">коммерческая недвижимость</p>
+				</li>
+				<li class="main-features__item">
+					<img src="{% static 'main/img/speech.svg' %}" alt="" class="main-features__image">
+					<p class="main-features__text">консалтинговые услуги</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="about-services">
+		<div class="about__wrapper">
+			<div class="about-services__element">
+				<div class="about-services__element-img">
+					<img src="{% static 'main/img/opacity.jpg' %}" alt="">
+				</div>
+				<div class="about-services__element-info">
+					<h3 class="about-services__title">Прозрачность</h3>
+					<p class="about-services__text">
+						Со дня основания агентство наше агентство характеризуют динамичное развитие и финансовая устойчивость. Прозрачность отношений с клиентами, включая гибкий подход к ценообразованию в области риелторских и консалтинговых услуг – основа доверия клиентов и партнеров.
+					</p>
+				</div>
+			</div>
+			<div class="about-services__element about-services__element--back">
+				<div class="about-services__element-img">
+					<img src="{% static 'main/img/meet.jpg' %}" alt="">
+				</div>
+				<div class="about-services__element-info">
+					<h3 class="about-services__title">Cотрудничество</h3>
+					<p class="about-services__text">
+						Активное сотрудничество с крупнейшими банками, строительными и инвестиционными компаниями позволяет агентству недвижимости АН «ХоумВей»:
+					</p>
+					<ul class="about-services__list">
+						<li class="about-services__item about-services__text">учитывать и продвигать интересы клиентов различных социальных слоев,</li>
+						<li class="about-services__item about-services__text">выбирать оптимальные пути решения задач, </li>
+						<li class="about-services__item about-services__text">предоставлять гибкие системы скидок, </li>
+						<li class="about-services__item about-services__text">различные схемы ипотечного и комбинированного кредитования,</li>
+						<li class="about-services__item about-services__text">обеспечивать юридическую защиту и сопровождение сделок.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="about-services__element">
+				<div class="about-services__element-img">
+					<img src="{% static 'main/img/improve.jpg' %}" alt="">
+				</div>
+				<div class="about-services__element-info">
+					<h3 class="about-services__title">Развитие</h3>
+					<p class="about-services__text">
+						Динамичное развитие партнерских отношений, постоянная работа по расширению видов услуг и продуктовой линейки, опыт и применение новых технологий делают компанию открытым, успешным и уверенным игроком рынка недвижимости.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-form">
+		<div class="about__wrapper">
+			<form action="#" method="POST" class="about__form">
+				<h3 class="map-form__title">Заказать обратный звонок</h3>
+				<fieldset class="about__form-fildset map-form__fieldset">
+					<fieldset class="map-form__fieldset">
+						<label class="map-form__label" for="name">ФИО</label>
+						<input class="map-form__input" type="text" placeholder="Иванов Иван Иванович" id='name'>
+					</fieldset>
+					<fieldset class="map-form__fieldset">
+						<label class="map-form__label" for="phone">Телефон</label>
+						<input class="map-form__input" type="phone" placeholder="+7 (XXX) XXX-XX-XX" id='phone'>
+					</fieldset>
+					<fieldset class="map-form__fieldset">
+						<label class="map-form__label" for="service">Выберите услугу</label>
+						<select class="map-form__input" name="choose__service" id="service">
+							<option value="0">Продать</option>
+							<option value="1">Купить</option>
+						</select>
+					</fieldset>
+					<button class="btn" type="submit">Оставить заявку</button>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+{% endblock %}
+
+{% block footer %}
+	{% include 'main/footer-light.html' %}
+{% endblock %}
+

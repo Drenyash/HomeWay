@@ -1,0 +1,147 @@
+{% load static %}
+
+	<footer class="footer footer--light">
+		<h2 class="visually-hidden">Футер сайта</h2>
+		<div class="footer__wrapper">
+			<div class="footer__element">
+				<h3 class="footer__title">Продукты</h3>
+				<ul class="footer-products">
+					<li class="footer-products__item">
+						<img src="{% static 'main/img/grand-way-dark.svg' %}" alt="">
+					</li>
+					<li class="footer-products__item">
+						<img src="{% static 'main/img/pofit-way-dark.svg' %}" alt="">
+					</li>
+					<li class="footer-products__item">
+						<img src="{% static 'main/img/home-way-dark.svg' %}" alt="">
+					</li>
+					<li class="footer-products__item">
+						<img src="{% static 'main/img/store-way-dark.svg' %}" alt="">
+					</li>
+				</ul>
+				<ul class="footer__social social">
+					<li class="social__item">
+						<a href="{% url 'not_found' %}" class="social__link">
+							<img src="{% static 'main/img/vk-dark.svg' %}" alt="">
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="{% url 'not_found' %}" class="social__link">
+							<img src="{% static 'main/img/twitter-dark.svg' %}" alt="">
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="{% url 'not_found' %}" class="social__link">
+							<img src="{% static 'main/img/inst-dark.svg' %}" alt="">
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="{% url 'not_found' %}" class="social__link">
+							<img src="{% static 'main/img/yt-dark.svg' %}" alt="">
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="{% url 'not_found' %}" class="social__link">
+							<img src="{% static 'main/img/facebook-dark.svg' %}" alt="">
+						</a>
+					</li>
+				</ul>	
+			</div>
+			<div class="footer__element">
+				<div class="footer-nav">
+					<div class="footer-nav__item">
+						<a class="footer-nav__header-link" href="{% url 'about' %}">О компании</a>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Новости</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Офисы</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Консультанты</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Работа в компании</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Контакты</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Руководство</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav__item">
+						<a class="footer-nav__header-link" href="{% url 'about' %}">Новостройки</a>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Все новостройки</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Элитные новостройки</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Ипотека online</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Подобрать новостройку</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Новостройки на карте</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav__item">
+						<a class="footer-nav__header-link" href="{% url 'about' %}">Вторичка</a>
+					</div>
+					<div class="footer-nav__item">
+						<a class="footer-nav__header-link" href="{% url 'about' %}">Коммерция</a>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Продажа<br>помещений</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Помещения<br>в новостройках</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav__item">
+						<a class="footer-nav__header-link" href="{% url 'about' %}">Услуги</a>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Продать</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Купить</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Оценить</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Обменять</a>
+							</li>
+							<li class="footer-nav__element">
+								<a href="{% url 'not_found' %}" class="footer-nav__link">Срочный выкуп</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav__item">
+						<a class="footer-nav__header-link" href="{% url 'about' %}">Застройщикам</a>
+					</div>
+					<div class="footer-nav__item">
+						<a class="footer-nav__header-link" href="{% url 'about' %}">ЖК HomeWay</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__element">
+				<a class="footer__offer-link" href="{% url 'not_found' %}">Политика конфиденциальности</a>
+				<a class="footer__offer-link" href="{% url 'not_found' %}">Политика использования файлов cookie</a>
+				<a class="footer__offer-link" href="{% url 'not_found' %}">Пользовательское соглашение</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>

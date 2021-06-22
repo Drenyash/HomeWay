@@ -1,0 +1,103 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block nav %}
+	<li class="nav__item">
+		<a href="{% url 'about' %}" class="nav__link nav__link--1">О компании</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Новости</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Офисы</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Консультанты</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'work' %}" class="sub-list__link">Работа в компании</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Компании</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Руководство</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item">
+		<a href="{% url 'not_found' %}" class="nav__link nav__link--2">Новостройки</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Все новостройки</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Элитные новостройки</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Ипотека online</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Подобрать новостройку</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Новостройки на карте</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--3">Вторичка</a></li>
+	<li class="nav__item">
+		<a href="{% url 'not_found' %}" class="nav__link nav__link--4">Коммерция</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Продажа помещений</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Помещения в новостройках</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item">
+		<a href="{% url 'not_found' %}" class="nav__link nav__link--5">Услуги</a>
+		<ul class="nav__sub-list sub-list">
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Продать</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Купить</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Оценить</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Обменять</a>
+			</li>
+			<li class="sub-list__item">
+				<a href="{% url 'not_found' %}" class="sub-list__link">Срочный выкуп</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--6">Застройщикам</a></li>
+	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--7">ЖК HomeWay</a></li>
+{% endblock %}
+
+{% block intro %}
+	<h1 class="intro__title intro__title--light">
+		Работайте<br>
+		<span>с AH HomeWay</span><br>
+		в любом городе
+	</h1>
+	<ul class='list'>
+		<li class="list__item">Зарабатывайте достойно, даже без опыта</li>
+		<li class="list__item">Работайте в надежной компании и без бюрократии</li>
+		<li class="list__item">Совмещайте работу с учебой или с основной работой</li>
+	</ul>
+{% endblock %}
+
+{% block footer %}
+	{% include 'main/footer.html' %}
+{% endblock %}
+

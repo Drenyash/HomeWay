@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="{% static 'main/css/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<header class="main-header main-header--index" style="background-image: url('{{ background }}')">
+		<div class="main-header__wrapper">
+			<nav class="nav">
+				<a class="nav-logo logo" href="{% url 'home' %}"><img src="{% static 'main/img/logo.svg' %}" alt=""></a>
+				<ul class="nav__list">
+					{% block nav %}
+					{% endblock %}
+					<li class="nav__item">
+						<a href="{% url 'not_found' %}">
+							<img src="{% static 'main/img/billing.svg' %}" alt="">
+						</a>
+					</li>
+					<li class="nav__item">
+						<div class="burger">
+							<span class="burger__item"></span>
+						</div>
+					</li>
+					<li class="nav__item">
+						<select class="nav__language" name="language">
+							<option value="0">RU</option>
+							<option value="1">EN</option>
+						</select>
+					</li>
+				</ul>
+			</nav>
+			<div class="main-header__place place">
+				<p>Город:</p>
+				<select class="place__select" name="" id="">
+					<option value="0">Москва</option>
+					<option value="1">Питер</option>
+				</select>
+			</div>
+		</div>
+		<div class="intro">
+			<div class="container">
+				{% block intro %}
+				{% endblock %}
+			</div>
+		</div>
+	</header>
+
+	<main>
+		{% block content %}
+		{% endblock %}
+	</main>
+
+{% block footer %}
+{% endblock %}
