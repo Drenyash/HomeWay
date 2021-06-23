@@ -5,99 +5,429 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block nav %}
-	<li class="nav__item">
-		<a href="{% url 'about' %}" class="nav__link nav__link--1">О компании</a>
-		<ul class="nav__sub-list sub-list">
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Новости</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Офисы</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Консультанты</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'work' %}" class="sub-list__link">Работа в компании</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Компании</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Руководство</a>
-			</li>
-		</ul>
-	</li>
-	<li class="nav__item">
-		<a href="{% url 'not_found' %}" class="nav__link nav__link--2">Новостройки</a>
-		<ul class="nav__sub-list sub-list">
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Все новостройки</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Элитные новостройки</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Ипотека online</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Подобрать новостройку</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Новостройки на карте</a>
-			</li>
-		</ul>
-	</li>
-	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--3">Вторичка</a></li>
-	<li class="nav__item">
-		<a href="{% url 'not_found' %}" class="nav__link nav__link--4">Коммерция</a>
-		<ul class="nav__sub-list sub-list">
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Продажа помещений</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Помещения в новостройках</a>
-			</li>
-		</ul>
-	</li>
-	<li class="nav__item">
-		<a href="{% url 'not_found' %}" class="nav__link nav__link--5">Услуги</a>
-		<ul class="nav__sub-list sub-list">
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Продать</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Купить</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Оценить</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Обменять</a>
-			</li>
-			<li class="sub-list__item">
-				<a href="{% url 'not_found' %}" class="sub-list__link">Срочный выкуп</a>
-			</li>
-		</ul>
-	</li>
-	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--6">Застройщикам</a></li>
-	<li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--7">ЖК HomeWay</a></li>
+    <li class="nav__item">
+        <a href="{% url 'about' %}" class="nav__link nav__link--1">О компании</a>
+        <ul class="nav__sub-list sub-list">
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Новости</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Офисы</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Консультанты</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'work' %}" class="sub-list__link">Работа в компании</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Компании</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Руководство</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav__item">
+        <a href="{% url 'not_found' %}" class="nav__link nav__link--2">Новостройки</a>
+        <ul class="nav__sub-list sub-list">
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Все новостройки</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Элитные новостройки</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Ипотека online</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Подобрать новостройку</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Новостройки на карте</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--3">Вторичка</a></li>
+    <li class="nav__item">
+        <a href="{% url 'not_found' %}" class="nav__link nav__link--4">Коммерция</a>
+        <ul class="nav__sub-list sub-list">
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Продажа помещений</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Помещения в новостройках</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav__item">
+        <a href="{% url 'not_found' %}" class="nav__link nav__link--5">Услуги</a>
+        <ul class="nav__sub-list sub-list">
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Продать</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Купить</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Оценить</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Обменять</a>
+            </li>
+            <li class="sub-list__item">
+                <a href="{% url 'not_found' %}" class="sub-list__link">Срочный выкуп</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--6">Застройщикам</a></li>
+    <li class="nav__item"><a href="{% url 'not_found' %}" class="nav__link nav__link--7">ЖК HomeWay</a></li>
 {% endblock %}
 
 {% block intro %}
-	<h1 class="intro__title intro__title--light">
-		Работайте<br>
-		<span>с AH HomeWay</span><br>
-		в любом городе
-	</h1>
-	<ul class='list'>
-		<li class="list__item">Зарабатывайте достойно, даже без опыта</li>
-		<li class="list__item">Работайте в надежной компании и без бюрократии</li>
-		<li class="list__item">Совмещайте работу с учебой или с основной работой</li>
-	</ul>
+    <h1 class="intro__title intro__title--light">
+        Работайте<br>
+        <span class="intro__title--accent">с AH HomeWay</span><br>
+        в любом городе
+    </h1>
+    <ul class='list'>
+        <li class="list__item">Зарабатывайте достойно, даже без опыта</li>
+        <li class="list__item">Работайте в надежной компании и без бюрократии</li>
+        <li class="list__item">Совмещайте работу с учебой или с основной работой</li>
+    </ul>
+{% endblock %}
+
+{% block header_back %}
+    <div class="header-side">
+        <div class="header-side__bg"></div>
+        <img class="header-side__photo" src="{% static 'main/img/work-header-girl.png' %}" alt="">
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="work-promo">
+        <h2 class="visually-hidden">Получите бесценный опыт работы с нами!</h2>
+        <div class="work-promo__wrapper">
+            <img src="{% static 'main/img/work-man.png' %}" alt="">
+            <div class="work-promo__info">
+                <p class="work-promo__lead">
+                    Если Вы готовы работать и развиваться в этой интересной, творческой и высокооплачиваемой сфере,
+                    специалисты агентства недвижимости «ХоумВей» готовы передать Вам свои знания и опыт работы.
+                </p>
+                <p class="work-promo__text">
+                    В нашем Учебном Центре Вы получите необходимые навыки и знания, чтобы сделать карьеру от риэлтора до
+                    директора агентства.
+                    Компания проводит как внутреннее, так и внешнее обучение для новых и постоянных сотрудников. Для
+                    новичков в нашей компании проходит уникальная поэтапная программа обучения, которая позволяет в
+                    кратчайшие сроки освоить данную профессию. Каждый стажер в компании закрепляется за опытным
+                    наставником, который помогает в дальнейшем своими советами, опытом и добрым корпоративным
+                    отношением.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="work-features">
+        <div class="container">
+            <div class="work-features__wrapper">
+                <div class="work-features__element">
+                    <h3 class="work-features__lead">Работа из дома</h3>
+                    <p class="work-features__text">Консультируйте клиентов либо продавайте продукты GrandWay не покидая
+                        дом. Мы всему научим, вам нужен лишь компьютер и интернет</p>
+                </div>
+                <div class="work-features__element">
+                    <h3 class="work-features__lead">Разъездная работа</h3>
+                    <p class="work-features__text">Не любите сидеть на одном месте? Проводите встречи с клиентами,
+                        заключайте договоры и рассказывайте о наших продуктах</p>
+                </div>
+                <div class="work-features__element">
+                    <h3 class="work-features__lead">Работа в офисе</h3>
+                    <p class="work-features__text">Подойдет для тех, кто хочет работать с клиентами или документами из
+                        офиса и получать дополнительные бонусы при трудоустройстве</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-services">
+        <div class="container">
+            <div class="work-services__wrapper">
+                <h2 class="page__title work-services--title">Почему кандидаты<br> выбирают GrandWay</h2>
+                <div class="work-services__box">
+                    <div class="work-services__element">
+                        <img class="work-services__icon" src="{% static 'main/img/dollar.svg' %}" alt="">
+                        <h3 class='work-services__lead'>Заработок без ограничений</h3>
+                        <p class="work-services__text">На большинстве вакансий сможете получить дополнительное
+                            вознаграждение:</p>
+                        <div class="work-services__list">
+                            <ul class="list list--small list--dark">
+                                <li class="list__item">Карьерный рост</li>
+                                <li class="list__item">Бизнес-обучение</li>
+                                <li class="list__item">Получать призы и<br> подарки от компании;</li>
+                            </ul>
+                            <ul class="list list--small list--dark">
+                                <li class="list__item">Получить комиссию при продаже<br> продуктов ваших партнеров</li>
+                                <li class="list__item">Автобонус</li>
+                                <li class="list__item">Путешествия</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="work-services__element">
+                        <img class="work-services__icon" src="{% static 'main/img/clock.svg' %}" alt="">
+                        <h3 class='work-services__lead'>Удобное время работы</h3>
+                        <p class="work-services__text">Работай в офисе 5/2, 2/2 или с почасовой оплатой. Если совмещаешь
+                            работу с учебой, подберем вакансию с подходящим расписанием</p>
+                    </div>
+                    <div class="work-services__element">
+                        <img class="work-services__icon" src="{% static 'main/img/chart-up.svg' %}" alt="">
+                        <h3 class='work-services__lead'>Постоянное развитие</h3>
+                        <p class="work-services__text">Бесплатный доступ к базе курсов, чтобы повышать свой уровень и
+                            осваивать новые навыки. Карьерный рост для самых амбициозных партнеров</p>
+                    </div>
+                    <div class="work-services__element">
+                        <img class="work-services__icon" src="{% static 'main/img/bump.svg' %}" alt="">
+                        <h3 class='work-services__lead'>Неформальная обстановка</h3>
+                        <p class="work-services__text">У нас общаются на «ты» даже с руководителями, а на работу мы
+                            ходим в костюмах, рубашках и с любым цветом волос</p>
+                    </div>
+                    <div class="work-services__element">
+                        <img class="work-services__icon" src="{% static 'main/img/diploma.svg' %}" alt="">
+                        <h3 class='work-services__lead'>Можно без опыта</h3>
+                        <p class="work-services__text">Главное — коммуникабельность, активность и желание работать. А
+                            остальному научим в онлайн-бизнес академии ISP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-in">
+        <div class="container">
+            <div class="work-in__wrapper">
+                <h2 class="page__title work-services--title">Работа в нашей компании - это:</h2>
+                <ul class="list list--small list--dark">
+                    <li class="list__item">Работа под известным брендом</li>
+                    <li class="list__item">Профессиональное обучение</li>
+                    <li class="list__item">Комфортные условия для работы</li>
+                    <li class="list__item">Привлекательная система мотивации</li>
+                    <li class="list__item">Подарки за повышение профессионального статуса</li>
+                    <li class="list__item">Система адаптации сотрудников</li>
+                    <li class="list__item">Возможность профессионального и карьерного роста</li>
+                    <li class="list__item">Демократичная корпоративная культура</li>
+                    <li class="list__item">Доброжелательный коллектив</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="work-why">
+        <div class="container">
+            <div class="work-why__wrapper">
+                <h2 class="page__title">Почему стоит работать именно в AH HomeWay?</h2>
+                <ul class="work-why__list">
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/clipboard.svg' %}" alt="">
+                        <p class="work-why__text">Индивидуальная программа обучения</p>
+                    </li>
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/chart.svg' %}" alt="">
+                        <p class="work-why__text">Стабильность, уверенность в завтрашнем дне</p>
+                    </li>
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/diploma.svg' %}" alt="">
+                        <p class="work-why__text">Высококвалифицированные руководители</p>
+                    </li>
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/s-hands.svg' %}" alt="">
+                        <p class="work-why__text">Доверие деловых партнеров</p>
+                    </li>
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/hotel.svg' %}" alt="">
+                        <p class="work-why__text">Комфортные офисы и рабочие места</p>
+                    </li>
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/auction.svg' %}" alt="">
+                        <p class="work-why__text">Юридическая поддержка и сопровождение сделок</p>
+                    </li>
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/laptop.svg' %}" alt="">
+                        <p class="work-why__text">Наличие уникальной CRM-системы</p>
+                    </li>
+                    <li class="work-why__item">
+                        <img class="work-why__icon" src="{% static 'main/img/web.svg' %}" alt="">
+                        <p class="work-why__text">Наличие внутрикорпоративного сайта</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="work-request">
+        <div class="work-request__wrapper">
+            <form action="#" method="POST" class="work-request__form">
+                <h3 class="map-form__title">Оставьте <span>заявку</span></h3>
+                <fieldset class="map-form__fieldset">
+                    <label class="map-form__label" for="name">ФИО</label>
+                    <input class="map-form__input" type="text" placeholder="Иванов Иван Иванович" id='name'>
+                </fieldset>
+                <fieldset class="map-form__fieldset">
+                    <label class="map-form__label" for="service">Город</label>
+                    <select class="map-form__input" name="choose__service" id="service">
+                        <option value="0">Москва</option>
+                        <option value="1">Санкт-Петербург</option>
+                    </select>
+                </fieldset>
+                <fieldset class="map-form__fieldset">
+                    <label class="map-form__label" for="service">Вакансия</label>
+                    <select class="map-form__input" name="choose__service" id="service">
+                        <option value="0">Оператор</option>
+                        <option value="1">Руководитель группы продаж</option>
+                        <option value="2">Бизнес-тренер</option>
+                        <option value="3">Юрист</option>
+                        <option value="4">Консультант</option>
+                    </select>
+                </fieldset>
+                <fieldset class="map-form__fieldset">
+                    <label class="map-form__label" for="phone">Телефон</label>
+                    <input class="map-form__input" type="tel" placeholder="+7 (XXX) XXX-XX-XX" id='phone'>
+                </fieldset>
+                <fieldset class="map-form__fieldset">
+                    <label class="map-form__label" for="mail">Электронная почта</label>
+                    <input class="map-form__input" type="email" placeholder="email@email.ru" id='mail'>
+                </fieldset>
+                <button class="btn" type="submit">Оставить заявку</button>
+            </form>
+        </div>
+    </section>
+    <section class="work-vacancy">
+        <div class="container">
+            <div class="work-vacancy__wrapper">
+                <h2 class="page__title">Перечень вакансий</h2>
+                <table class="work-vacancy__table">
+                    <thead class="work-vacancy__header">
+                    <tr class="work-vacancy__line">
+                        <th class="work-vacancy__lead">Вакансии</th>
+                        <th class="work-vacancy__lead">Опыт</th>
+                        <th class="work-vacancy__lead">Регион</th>
+                        <th class="work-vacancy__lead">Подробнее</th>
+                    </tr>
+                    </thead>
+                    <tbody class="work-vacancy__body">
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Руководитель группы продаж</td>
+                        <td class="work-vacancy__column">от 2 лет</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Бизнес тренер</td>
+                        <td class="work-vacancy__column">от 3 лет</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Персональный менеджер по инвестициям</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Юрист по ипотеке (Рефинансирование банковской ипотеки)</td>
+                        <td class="work-vacancy__column">от 2 лет</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Юрист по ипотеке (Рассрочка) </td>
+                        <td class="work-vacancy__column">от 2 лет</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Менеджер по работе клиентами</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Риелтор</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Менеджер по рефинансированию ипотек</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Менеджер по документообороту</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Консультант</td>
+                        <td class="work-vacancy__column">без опыта</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Менеджер агентской группы</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Агент по страхованию</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Агент по коммунальным платежам</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    <tr class="work-vacancy__line">
+                        <td class="work-vacancy__column">Руководитель отдела продаж</td>
+                        <td class="work-vacancy__column">от 1 года</td>
+                        <td class="work-vacancy__column">Вся Россия</td>
+                        <td class="work-vacancy__column">
+                            <a class="work-vacancy__link" href="{% url 'not_found' %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 {% endblock %}
 
 {% block footer %}
-	{% include 'main/footer.html' %}
+    {% include 'main/footer.html' %}
 {% endblock %}
 
